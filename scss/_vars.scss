@@ -1,0 +1,49 @@
+:root {
+  --header-height: 3.5rem;
+
+  //--Colors
+  --hue: 162;
+  --first-color: hsl(162, 100%, 40%);
+  --first-color-alt: hsl(162, 56%, 35%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 65%);
+  --body-color: hsl(228, 15%, 20%);
+  --container-color: hsl(228, 15%, 15%);
+
+  //--Fonts
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+}
+
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  color: var(--title-color);
+  font-weight: 500;
+  transition: box-shadow .5s ease;
+  &:hover {
+    box-shadow: 0 8px 24px hsla(162, 100%, 40%, .25);
+  }
+}
